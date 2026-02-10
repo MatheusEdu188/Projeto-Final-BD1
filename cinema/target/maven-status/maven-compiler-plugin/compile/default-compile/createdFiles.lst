@@ -1,4 +1,4 @@
 br/edu/ifpb/bd/model/Filme.class
+br/edu/ifpb/bd/test/TesteFilmeDAO.class
 br/edu/ifpb/bd/dao/FilmeDAO.class
 br/edu/ifpb/bd/util/ConnectionFactory.class
-br/edu/ifpb/bd/test/TesteFilmeDAO.class

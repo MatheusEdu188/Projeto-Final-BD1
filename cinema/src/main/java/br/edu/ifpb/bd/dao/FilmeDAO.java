@@ -92,5 +92,49 @@ public class FilmeDAO {
         return filmes;
     }
 
-    
+    public void updateFilme(Filme filme){
+        String sql = "UPDATE filme SET titulo = ?, duracao = ?, classificacao = ?, genero = ? WHERE id = ?;";
+
+        try(
+            Connection conn = ConnectionFactory.getConnection();
+            PreparedStatement stmt = conn.prepareStatement(sql);
+        ) {
+            stmt.setString(1, filme.getTitulo());
+            stmt.setInt(2, filme.getDuracao());
+            stmt.setString(3, filme.getClassificacao());
+            stmt.setString(4, filme.getGenero());
+            stmt.setInt(5, filme.getId());
+
+            int att = stmt.executeUpdate();
+
+            System.out.println("Filme atualizado! " + att);
+
+            
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void remover(int id){
+
+        String sql = "DELETE FROM filme WHERE id = ?";
+
+        try(
+            Connection conn = ConnectionFactory.getConnection();
+            PreparedStatement stmt = conn.prepareStatement(sql);
+        ) {
+            stmt.setInt(1, id);
+
+            int att = stmt.executeUpdate();
+
+            System.out.println("Linhas removidas: "+att);
+            
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+
+
 }
