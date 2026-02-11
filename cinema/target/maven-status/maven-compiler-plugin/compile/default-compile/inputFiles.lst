@@ -1,12 +1,13 @@
 /home/matheus/Documentos/Projeto-final-bd1/cinema/src/main/java/br/edu/ifpb/bd/servlet/ListarFilmesServlet.java
-/home/matheus/Documentos/Projeto-final-bd1/cinema/src/main/java/br/edu/ifpb/bd/dto/FilmeDTO.java
 /home/matheus/Documentos/Projeto-final-bd1/cinema/src/main/java/br/edu/ifpb/bd/dao/SessaoDAO.java
 /home/matheus/Documentos/Projeto-final-bd1/cinema/src/main/java/br/edu/ifpb/bd/dao/FilmeDAO.java
-/home/matheus/Documentos/Projeto-final-bd1/cinema/src/main/java/br/edu/ifpb/bd/model/Sessao.java
-/home/matheus/Documentos/Projeto-final-bd1/cinema/src/main/java/br/edu/ifpb/bd/test/TesteFilmeDAO.java
-/home/matheus/Documentos/Projeto-final-bd1/cinema/src/main/java/br/edu/ifpb/bd/util/ConnectionFactory.java
 /home/matheus/Documentos/Projeto-final-bd1/cinema/src/main/java/br/edu/ifpb/bd/servlet/EditarFilmeServlet.java
 /home/matheus/Documentos/Projeto-final-bd1/cinema/src/main/java/br/edu/ifpb/bd/dto/SessaoDTO.java
 /home/matheus/Documentos/Projeto-final-bd1/cinema/src/main/java/br/edu/ifpb/bd/model/Filme.java
 /home/matheus/Documentos/Projeto-final-bd1/cinema/src/main/java/br/edu/ifpb/bd/servlet/RemoverFilmeServlet.java
 /home/matheus/Documentos/Projeto-final-bd1/cinema/src/main/java/br/edu/ifpb/bd/servlet/CadastrarFilmeServlet.java
+/home/matheus/Documentos/Projeto-final-bd1/cinema/src/main/java/br/edu/ifpb/bd/dto/FilmeDTO.java
+/home/matheus/Documentos/Projeto-final-bd1/cinema/src/main/java/br/edu/ifpb/bd/model/Sessao.java
+/home/matheus/Documentos/Projeto-final-bd1/cinema/src/main/java/br/edu/ifpb/bd/test/TesteFilmeDAO.java
+/home/matheus/Documentos/Projeto-final-bd1/cinema/src/main/java/br/edu/ifpb/bd/util/ConnectionFactory.java
+/home/matheus/Documentos/Projeto-final-bd1/cinema/src/main/java/br/edu/ifpb/bd/servlet/BuscarFilmeServlet.java

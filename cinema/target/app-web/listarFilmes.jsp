@@ -4,12 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Lista de Filmes</title>
-    <style>
-        table { border-collapse: collapse; width: 80%; }
-        th, td { border: 1px solid #000; padding: 8px; text-align: left; }
-        th { background-color: #f2f2f2; }
-        a { text-decoration: none; color: blue; }
-    </style>
+    
 </head>
 <body>
 
@@ -17,7 +12,7 @@
 
     <h1>Filmes Cadastrados</h1>
 
-    <table>
+    <table border="1">
         <thead>
             <tr>
                 <th>ID</th>

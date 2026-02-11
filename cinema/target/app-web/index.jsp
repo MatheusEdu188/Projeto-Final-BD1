@@ -13,6 +13,9 @@
         <a href="cadastrarFilme" class="btn">Cadastrar Filme</a>
         &nbsp; &nbsp;
         <a href="listarFilmes" class="btn">Editar Filme</a>
+        &nbsp; &nbsp;
+        <a href="buscarFilme" class="btn">Buscar Filme</a>
+
     </div>
    
    

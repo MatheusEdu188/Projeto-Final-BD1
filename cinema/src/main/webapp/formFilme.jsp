@@ -9,7 +9,7 @@
 <body>
     <h1>Cadastre agora</h1>
 
-    <form action="cadastrarFilme" method="post">
+    <form  action="cadastrarFilme" method="post">
         <label for="titulo">Titulo</label>
         <input type="text" name="titulo" id="titulo">
 

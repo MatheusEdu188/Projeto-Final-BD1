@@ -70,7 +70,7 @@ public class FilmeDAO {
         stmt.setInt(1, id);
         ResultSet rs = stmt.executeQuery();
 
-        if (rs.next()) { // só um resultado
+        if (rs.next()) { 
             Filme filme = new Filme();
 
             filme.setId(rs.getInt("id"));
