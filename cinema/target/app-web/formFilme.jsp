@@ -1,5 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
+﻿<%@ page import="java.util.*,br.edu.ifpb.bd.model.Filme" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>

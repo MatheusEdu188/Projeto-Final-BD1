@@ -13,7 +13,7 @@
 </head>
 <body>
 
-    <a href="index.html">Voltar ao Menu</a>
+    <a href="index.jsp">Voltar ao Menu</a>
 
     <h1>Filmes Cadastrados</h1>
 
@@ -25,12 +25,13 @@
                 <th>Duração (min)</th>
                 <th>Classificação</th>
                 <th>Gênero</th>
+                <th>Ações</th> 
             </tr>
         </thead>
         <tbody>
             <% 
                 List<Filme> filmes = (List<Filme>) request.getAttribute("filmes");
-                if(filmes != null){
+                if(filmes != null && !filmes.isEmpty()){
                     for(Filme filme : filmes){
             %>
                 <tr>
@@ -39,13 +40,19 @@
                     <td><%= filme.getDuracao() %></td>
                     <td><%= filme.getClassificacao() %></td>
                     <td><%= filme.getGenero() %></td>
+                    <td>
+                        <a href="editarFilme?id=<%= filme.getId() %>">Editar</a>
+                    </td>
+                    <td>
+                        <a href="removerFilme?id=<%= filme.getId() %>">Remover</a>
+                    </td>
                 </tr>
             <%  
                     }
                 } else { 
             %>
                 <tr>
-                    <td colspan="5">Nenhum filme cadastrado.</td>
+                    <td colspan="6">Nenhum filme cadastrado.</td>
                 </tr>
             <% } %>
         </tbody>

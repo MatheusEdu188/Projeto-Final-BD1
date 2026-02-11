@@ -58,39 +58,38 @@ public class FilmeDAO {
     }
 
 
-    public List<Filme> buscarPorTitulo(String titulo){
-        List<Filme> filmes = new ArrayList<>();
+   public Filme buscarPorId(int id) {
 
-        String sql = "SELECT * FROM filme WHERE titulo ILIKE ?";
+    String sql = "SELECT * FROM filme WHERE id = ?";
 
-        try(
-            Connection conn = ConnectionFactory.getConnection();
-            PreparedStatement stmt = conn.prepareStatement(sql);
-        ){
-            stmt.setString(1,"%" + titulo + "%");
+    try (
+        Connection conn = ConnectionFactory.getConnection();
+        PreparedStatement stmt = conn.prepareStatement(sql);
+    ) {
 
-            ResultSet rs = stmt.executeQuery();
+        stmt.setInt(1, id);
+        ResultSet rs = stmt.executeQuery();
 
-            while (rs.next()) {
-                Filme filme = new Filme();
+        if (rs.next()) { // só um resultado
+            Filme filme = new Filme();
 
-                filme.setId(rs.getInt("id"));
-                filme.setTitulo(rs.getString("titulo"));
-                filme.setDuracao(rs.getInt("duracao"));
-                filme.setClassificacao(rs.getString("classificacao"));
-                filme.setGenero(rs.getString("genero"));
+            filme.setId(rs.getInt("id"));
+            filme.setTitulo(rs.getString("titulo"));
+            filme.setDuracao(rs.getInt("duracao"));
+            filme.setClassificacao(rs.getString("classificacao"));
+            filme.setGenero(rs.getString("genero"));
 
-
-                filmes.add(filme);
-                
-            }
-            rs.close();
-
-        }catch(SQLException e){
-            e.printStackTrace();
+            return filme;
         }
-        return filmes;
+
+        rs.close();
+
+    } catch (SQLException e) {
+        e.printStackTrace();
     }
+
+    return null; 
+}
 
     public void updateFilme(Filme filme){
         String sql = "UPDATE filme SET titulo = ?, duracao = ?, classificacao = ?, genero = ? WHERE id = ?;";

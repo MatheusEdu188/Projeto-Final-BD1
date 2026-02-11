@@ -1,4 +1,4 @@
-﻿<%@ page import="java.util.*,br.edu.ifpb.bd.model.Curso" %>
+﻿<%@ page import="java.util.*,br.edu.ifpb.bd.model.Filme" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
