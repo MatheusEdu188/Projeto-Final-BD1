@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.barraNav {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 15px;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    margin: 8px;
+    padding: 10px 18px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
